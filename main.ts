@@ -1,7 +1,9 @@
-import puppeteer from 'puppeteer';
-import notifier from 'node-notifier'
+import 'dotenv/config';
 
-const PAGE_URL = `https://covid.buenosaires.gob.ar/AgendarTramite?idPrestacion=3809&tokensession=B5rb-PsUpe5ahNerPyAQ64sYh1OespCFDFgy7rbclqc&flow=primeros`;
+import puppeteer from 'puppeteer';
+import notifier from 'node-notifier';
+
+const PAGE_URL = process.env.PAGE_URL || '';
 const SELECTOR = `#no-data > div > div`;
 
 async function main() {
@@ -25,9 +27,11 @@ async function main() {
     }
 
     await browser.close();
-  } catch (e) {
-    console.log('############');
-    console.log(e);
+  } catch (error) {
+    let message = 'Unknown Error';
+    if (error instanceof Error) message = error.message;
+
+    console.log(message);
   }
 }
 
