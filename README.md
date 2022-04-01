@@ -1,5 +1,3 @@
 #turnos-vacuna-gripe
 
-> Basado en el repositorio de Goncy: https://github.com/goncy/turnos-consulado-espa-a
-
-Busca turnos disponibles para la vacuna de la gripe.
+> Basado en la ideea y [el repositorio de Goncy](https://github.com/goncy/turnos-consulado-espa-a) para hacer web scraping de la página de turnos de vacuna contra la gripe a fin de obtener una notificación cuando haya uno disponible.
