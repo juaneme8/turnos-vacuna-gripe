@@ -23,7 +23,8 @@ async function main() {
         message: `Hay turnos para vacunación: ${text}`,
       });
     } else {
-      console.log(`No hay turnos todavía :(`);
+      const date = new Date();
+      console.log(`${date} - No hay turnos todavía :(`);
     }
 
     await browser.close();
