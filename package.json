@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon main.ts"
+    "dev": "nodemon main.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +12,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "node-notifier": "^10.0.1",
-    "puppeteer": "^13.5.1"
+    "puppeteer": "^13.5.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
